@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parejas.css">
+    <title>Juego de parejas</title>
+</head>
+<body>
+    <div id="titulo">
+        <img id="imagenlol" src="lol.png">
+        <h1 id="h1juegoparejas">Juego De Parejas</h1>
+    </div>
+    <div id="descripcion">
+        <p>Los personajes del carril inferior se han escondido.Cada personaje se coloca dos veces en las cartas. Sólo puedes seleccionar dos cartas en cada turno.</p>
+        <p>Tu misión es encontrar la pareja de personajes en el menor número de intentos.</p>
+        <p>Cuando una pareja es encontrada, ambos permanecerán boca arriba, de lo contrario,serán volteados hacia abajo. ¡A menor número de intentos, mejor puntuación!</p></p>
+    </div>
+        <div id="h1empezar">
+            <h2>EMPIEZA YA!</h2>
+        </div>
+        <div id="botones">
+            <button id="empezar" onclick="jugar()">Empezar</button>
+            <button id="continuar" onclick="jugar('true')">Continuar</button>    
+        </div>
+
+    <div id="tablero" style="display: none;">
+    </div>
+    <div id="tiempo"  class="tiempodiseño"></div>
+    <div id="fallos" class="fallosdiseño"></div>
+
+</body>
+</html>
+
+<script src="parejas.js"></script>
